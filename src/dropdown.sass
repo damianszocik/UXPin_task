@@ -1,0 +1,31 @@
+.dropdown
+    list-style-type: none
+    box-sizing: border-box
+    position: relative
+    display: inline-block
+    background-color: #fff
+    min-width: 100%
+    padding-left: 0.4em
+    padding-bottom: 6px
+    margin-top: 16px
+    border: 0px
+    border-bottom: 1px solid $normal-gray
+
+
+.dropdown-content
+    background-color: #fff
+    margin-left: -1em
+    min-width: 120px
+    display: none
+    position: absolute
+    z-index: 1
+    li
+        margin: 0
+        padding: 0.5em
+        padding-left: 1em
+        box-sizing: border-box
+        &:hover
+            font-weight: bold
+
+.dropdown-content-show
+    display: block

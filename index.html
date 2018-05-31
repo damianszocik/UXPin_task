@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UXPin Recruitment Task</title>
+    <link rel="stylesheet" type="text/css" href="dist/bundle.css">
+</head>
+<body>
+    <div id="main-container">
+        <div class="header-toggles">
+            <a href="#" class="button button--header">
+                <img src="img/action-arrange-left.png" alt="arrange left" style="fill: orange">
+            </a>
+            <a href="#" class="button button--header">
+                <img src="img/action-arrange-vertical-center.png" alt="arrange vertical center">
+            </a>
+            <a href="#" class="button button--header">
+                <img src="img/action-arrange-right.png" alt="">
+            </a>
+            <a href="#" class="button button--header">
+                <img src="img/action-arrange-top-[not-in-set].png" alt="">
+            </a>
+            <a href="#" class="button button--header">
+                <img src="img/action-arrange-vertical-middle-[not-in-set].png" alt="">
+            </a>
+            <a href="#" class="button button--header">
+                <img src="img/action-arrange-bottom-[not-in-set].png" alt="">
+            </a>
+            <span class="vertical-divider vertical-divider--small"></span>
+            <a href="#" class="button button--header">
+                <img src="img/action-move-to-back.png" alt="">
+            </a>
+            <a href="#" class="button button--header">
+                <img src="img/action-move-to-front.png" alt="">
+            </a>
+        </div>
+        <hr class="horizontal-divider horizontal-divider--normal-gray">
+        <div class="section">
+            <div class="section-content">
+                <form action="">
+                    <div class="form-row">
+                        <label class="form-row form-row form-row__label-left--small" for="W">W</label>
+                        <input class="form-row form-row__input form-row__input--w60" type="number" min="0" name="W" id="W" value="500">
+                        <img class="form-row form-row__lock" src="img/Group 141.png" alt="lock">
+                        <label class="form-row form-row__label-left--small" for="H">H</label>
+                        <input class="form-row form-row__input form-row__input--w60" type="number" min="0" name="H" id="H" value="100">
+                        <!-- <img src="img/transform point.png" alt="select transform point"> -->
+                        <div class="cell-container">
+                                <div class="cell cell--active"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div> 
+                                </div>
+                    </div>
+                    <div class="form-row">
+                        <label class="form-row form-row__label-left--small" for="X">X</label>
+                        <input class="form-row form-row__input form-row__input--w60" type="number" min="0" name="X" id="X" value="0">
+                        <span class="form-row form-row__lock form-row__lock--spacer"></span>
+                        <label class="form-row form-row__label-left--small" for="Y">Y</label>
+                        <input class="form-row form-row__input form-row__input--w60" type="number" min="0" name="Y" id="Y" value="0">
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="tick"></span>
+                        </label>
+                        <p class="form-row form-row__label-checkbox">Sticky</p>
+                    </div>
+                    <div class="form-row">
+                        <label class="form-row form-row__label-left--big" for="Rotation">Rotation</label>
+                        <input class="form-row form-row__input form-row__input--w30" id="Rotation" value="0 &#176;">
+                    </div>
+                </form>
+            </div>
+            <hr class="horizontal-divider horizontal-divider--super-light-gray">
+            <div class="section-content">
+                <form action="">
+                    <div class="form-row">
+                        <label class="form-row form-row__label-left--big" for="TL">Radius</label>
+                        <span class="form-row form-row__input-span">
+                            <input class="form-row form-row__input form-row__input--w26" type="number" name="TL" id="TL" value="2">
+                            <label class="first-label form-row form-row__label-bottom" for="TL">TL</label>
+                        </span>
+                        <span class="form-row form-row__expandable form-row__expandable--hidden">
+                            <span class="form-row form-row__expandable form-row__expandable--helper-wrapper">
+                                <span class="form-row form-row__input-span">
+                                <input class="form-row form-row__input form-row__input--w26" type="number" name="TR" id="TR" value="2">
+                                <label class="form-row form-row__label-bottom" for="TR">TR</label>
+                            </span>
+                            <span class="form-row form-row__input-span">
+                                <input class="form-row form-row__input form-row__input--w26" type="number" name="BR" id="BR" value="2">
+                                <label class="form-row form-row__label-bottom" for="BR">BR</label>
+                            </span>
+                            <span class="form-row form-row__input-span">
+                                <input class="form-row form-row__input form-row__input--w26" type="number" name="BL" id="BL" value="2">
+                                <label class="form-row form-row__label-bottom" for="BL">BL</label>
+                            </span>
+                            </span>
+                                 
+                        </span>
+                        <a href="#" class="button button--outlined expand-row-toggle"><img src="img/Group 139.png" alt=""></a>
+                    </div>
+                    <div class="form-row">
+                            <label class="form-row form-row__label-left--big" for="Left">Padding</label>
+                            <span class="form-row form-row__input-span">
+                                <input class="form-row form-row__input form-row__input--w26" type="number" name="Left" id="Left" value="2">
+                                <label class="first-label form-row form-row__label-bottom" for="Left">Left</label>
+                            </span>
+                            <span class="form-row form-row__expandable form-row__expandable--hidden">
+                                <span class="form-row form-row__expandable form-row__expandable--helper-wrapper">
+                                    <span class="form-row form-row__input-span">
+                                        <input class="form-row form-row__input form-row__input--w26" type="number" name="Top" id="Top" value="2">
+                                        <label class="form-row form-row__label-bottom" for="Top">Top</label>
+                                    </span>
+                                    <span class="form-row form-row__input-span">
+                                        <input class="form-row form-row__input form-row__input--w26" type="number" name="Right" id="Right" value="2">
+                                        <label class="form-row form-row__label-bottom" for="Right">Right</label>
+                                    </span>
+                                    <span class="form-row form-row__input-span">
+                                        <input class="form-row form-row__input form-row__input--w26" type="number" name="Left2" id="Left2" value="2">
+                                        <label class="form-row form-row__label-bottom" for="Left2">Left</label>
+                                    </span> 
+                                </span>    
+                            </span>
+                            <a id = "padding-expand" href="#" class="button button--outlined expand-row-toggle"><img src="img/Group 140.png" alt=""></a>
+                    </div>
+                    <div class="form-row">
+                        <span class="form-row form-row__input-span">
+                        <label class="form-row form-row__label-left--big"  for="">Layer</label>
+                        <ul class="dropdown">
+                            <li class="dropdown-header">Normal</li>
+                            <label class="form-row form-row__label-bottom">Blending</label>
+                            <div class="dropdown-content">
+                                <li>Color</li>
+                                <li>Color-Burn</li>
+                                <li>Color-Dodge</li>
+                                <li>Darken</li>
+                                <li>Difference</li>
+                                <li>Exclusion</li>
+                                <li>Hard-Light</li>
+                                <li>Hue</li>
+                                <li>Lighten</li>
+                                <li>Luminosity</li>
+                                <li>Multiply</li>
+                                <li>Overlay</li>
+                                <li>Saturation</li>
+                                <li>Screen</li>
+                                <li>Soft-Light</li>
+                            </div>
+                        </ul>
+                        </span>
+                        <span class="form-row form-row__input-span form-row__input-span--layer">
+                                <input class="form-row form-row__input form-row__input--w40 " type="text" name="Opacity" id="Opacity" value="100%">
+                                <label class="form-row form-row__label-bottom" for="Opacity">Opacity</label>
+                        </span>   
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="fill" class="section">
+            <div class="section-header">
+                <h1 class="section-header__title">fill</h1>
+                <img src="img/plus.png" alt="expand section" class="expand-toggle button button--plus">
+            </div>
+            <div class="section-content section-content--shown">
+                <div class="section-content__helper-wrapper">
+                    <form action="">
+                        <div class="form-row">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" checked>
+                                    <span class="tick"></span>
+                                </label>
+                                <span class="color-pick color-pick--pink"></span>
+                                <span class="form-row form-row__input-span form-row__input-span--mt0">
+                                    <input class="form-row form-row__input form-row__input--w62" type="text" name="FillColor" id="fill-color" value="23F071">
+                                    <label class="form-row form-row__label-inside" for="fill-color">#</label>
+                                </span>
+                                <input class="form-row form-row__input form-row__input--w40" type="text" value="100%">
+                        </div>
+                        <div class="form-row">
+                            <label class="checkbox-container">
+                                <input type="checkbox" checked>
+                                <span class="tick"></span>
+                            </label>
+                            <span class="color-pick color-pick--gradient"></span>
+                            <label class="form-row form-row__label-left--big form-row__label-left--big--m0">Gradient</label>
+                            
+                        </div>
+                    </form>
+                </div>
+                </div>
+        </div>
+        <hr class="horizontal-divider horizontal-divider--super-light-gray">
+        <div id="stroke" class="section">
+             <div class="section-header">
+                <h1 class="section-header__title">stroke</h1>
+                <img src="img/plus.png" alt="expand section" class="expand-toggle button button--plus">
+             </div>
+             <div class="section-content section-content--shown">
+                 <div class="section-content__helper-wrapper">
+                
+                        <form action="">
+                                <div class="form-row">
+                                        <label class="checkbox-container">
+                                            <input type="checkbox" checked>
+                                            <span class="tick"></span>
+                                        </label>
+                                        <span class="color-pick color-pick--pink"></span>
+                                        <span class="form-row form-row__input-span form-row__input-span--mt0">
+                                            <input class="form-row form-row__input form-row__input--w62" type="text" name="FillColor" id="fill-color" value="23F071">
+                                            <label class="form-row form-row__label-inside" for="fill-color">#</label>
+                                        </span>
+                                        <ul class="dropdown dropdown--mt6">
+                                                <li class="dropdown-header"><img src="img/Rectangle 168.png" alt=""></li>
+                                                <label class="form-row form-row__label-bottom">Blending</label>
+                                                <div class="dropdown-content">
+                                                    <!-- <li><img src="img/Rectangle 168.png" alt=""></li> -->
+                                                    <li><img src="img/Repeat Grid 2.png" alt=""></li>
+                                                    <li><img src="img/Repeat Grid 1.png" alt=""></li>
+                                                </div>
+                                            </ul>
+                                </div>
+                            </form>
+
+                </div>
+                </div>
+        </div>
+        <hr class="horizontal-divider horizontal-divider--super-light-gray">
+        <div id="shadow" class="section">
+                <div class="section-header">
+                    <h1 class="section-header__title">shadow</h1>
+                    <img src="img/plus.png" alt="expand section" class="expand-toggle button button--plus">
+                </div>
+                <div class="section-content section-content--shown ">
+                    <div class="section-content__helper-wrapper">
+                        <form action="">
+                            <div class="form-row">
+                                    <label class="checkbox-container">
+                                        <input type="checkbox" checked>
+                                        <span class="tick"></span>
+                                    </label> 
+                                    <span class="color-pick color-pick--transparent"></span>
+                                    <span class="form-row form-row__input-span">
+                                        <input class="form-row form-row__input form-row__input--w34" type="text" name="Opacity" id="Opacity" value="40%">
+                                        <label class="form-row form-row__label-bottom" for="Opacity">Opacity</label>
+                                    </span>
+                                    <span class="form-row form-row__input-span">
+                                        <input class="form-row form-row__input form-row__input--w26" type="number" name="X" id="X" value="0">
+                                        <label class="form-row form-row__label-bottom" for="X">X</label>
+                                    </span>
+                                    <span class="form-row form-row__input-span">
+                                            <input class="form-row form-row__input form-row__input--w26" type="number" name="Y" id="Y" value="10">
+                                            <label class="form-row form-row__label-bottom" for="Y">Y</label>
+                                        </span>
+                                    <span class="form-row form-row__input-span">
+                                        <input class="form-row form-row__input form-row__input--w26" type="number" name="Blur" id="Blur" value="30">
+                                        <label class="form-row form-row__label-bottom" for="Blur">Blur</label>
+                                    </span>
+                                    <span class="form-row form-row__input-span">
+                                        <input class="form-row form-row__input form-row__input--w26" type="number" name="Spread" id="Spread" value="0">
+                                        <label class="form-row form-row__label-bottom" for="Spread">Spread</label>
+                                    </span>
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+        </div>
+        <div id="inner shadow" class="section">
+                <div class="section-header">
+                    <h1 class="section-header__title">inner shadow</h1>
+                    <img src="img/plus.png" alt="expand section" class="expand-toggle button button--plus">
+                </div>
+                <div class="section-content section-content--shown">
+                    <div class="section-content__helper-wrapper">
+                        <form action="">
+                            <div class="form-row">
+                                    <label class="checkbox-container">
+                                        <input type="checkbox" checked>
+                                        <span class="tick"></span>
+                                    </label> 
+                                    <span class="color-pick color-pick--transparent"></span>
+                                    <span class="form-row form-row__input-span">
+                                        <input class="form-row form-row__input form-row__input--w34" type="text" name="Opacity" id="Opacity" value="40%">
+                                        <label class="form-row form-row__label-bottom" for="Opacity">Opacity</label>
+                                    </span>
+                                    <span class="form-row form-row__input-span">
+                                        <input class="form-row form-row__input form-row__input--w26" type="number" name="X" id="X" value="0">
+                                        <label class="form-row form-row__label-bottom" for="X">X</label>
+                                    </span>
+                                    <span class="form-row form-row__input-span">
+                                            <input class="form-row form-row__input form-row__input--w26" type="number" name="Y" id="Y" value="10">
+                                            <label class="form-row form-row__label-bottom" for="Y">Y</label>
+                                        </span>
+                                    <span class="form-row form-row__input-span">
+                                        <input class="form-row form-row__input form-row__input--w26" type="number" name="Blur" id="Blur" value="30">
+                                        <label class="form-row form-row__label-bottom" for="Blur">Blur</label>
+                                    </span>
+                                    <span class="form-row form-row__input-span">
+                                        <input class="form-row form-row__input form-row__input--w26" type="number" name="Spread" id="Spread" value="0">
+                                        <label class="form-row form-row__label-bottom" for="Spread">Spread</label>
+                                    </span>
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+        </div>
+
+    </div>
+
+<!-- SCRIPT LINK -->
+<script src="dist/bundle.js"></script>
+</body>
+
+</html>

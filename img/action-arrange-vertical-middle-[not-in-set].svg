@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 9">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #6a6a6a;
+      }
+    </style>
+  </defs>
+  <path id="action-arrange-vertical-middle-_not-in-set_" data-name="action-arrange-vertical-middle-[not-in-set]" class="cls-1" d="M12,10.5V7h2V6H12V2.5a.472.472,0,0,0-.5-.5h-3a.472.472,0,0,0-.5.5V6H6V4.5A.472.472,0,0,0,5.5,4h-3a.472.472,0,0,0-.5.5V6H0V7H2V8.5a.472.472,0,0,0,.5.5h3A.472.472,0,0,0,6,8.5V7H8v3.5a.472.472,0,0,0,.5.5h3A.472.472,0,0,0,12,10.5ZM9,10V3h2v7Z" transform="translate(0 -2)"/>
+</svg>

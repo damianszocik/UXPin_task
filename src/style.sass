@@ -1,0 +1,338 @@
+//IMPORTS
+@import reset
+@import transform_point
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+// COLORS
+$super-light-gray: #f6f6f6
+$light-gray: #f3f3f3
+$normal-gray: #e6e6e6
+$main-gray: #a6a6a6
+$font-gray: #5e5e5e
+$font-light-gray: #8c8c8c
+$font-super-light-gray: #b3b3b3
+$active-blue: #006cff
+$pink: #f7017e
+$gradient: linear-gradient(to right, rgba(214,7,207,1) 0%, rgba(255,0,106,1) 100%)
+
+//FONTS
+$OpenSans: 'Open Sans', sans-serif
+
+//MAIN STYLES
+html, body 
+    height: 100%   
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 13px
+    font-family: $OpenSans
+
+#main-container
+    box-sizing: border-box
+    width: 280px
+    min-height: 90%
+    border: 1px solid $super-light-gray
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+
+//main header area toggles
+.header-toggles
+    display: flex
+    justify-content: space-around
+    align-items: center 
+    max-height: 40px
+    padding: 0.5rem 0.5rem
+    
+//button styles
+.button
+    padding: 0.5rem
+    &--header
+        min-width: 29px
+        min-height: 29px
+        box-sizing: border-box
+        display: flex
+        justify-content: center
+        align-items: center
+    &--plus
+        &:hover
+            background-color: $light-gray
+    &--outlined
+        padding: 4px
+        border: 1px solid $normal-gray
+        border-radius: 2px
+        width: 8px
+        height: 8px
+        margin-top: 0.6rem
+        img
+            margin-bottom: 3px
+    &:hover
+        background-color: $light-gray
+    img
+        fill: $main-gray
+
+//styles for hr elements
+.vertical-divider         
+    width: 1px    
+    background-color: $light-gray
+    &--small
+        height: 22px
+        margin: 0 0.7rem
+
+//style for span or div
+.horizontal-divider
+    margin: 0
+    height: 1px
+    border: 0
+    &--normal-gray
+        background-color: $normal-gray
+    &--super-light-gray
+        background-color: $super-light-gray
+        margin: 3px 0
+
+//sections content areas
+.section-content
+    padding: 0 20px 16px 20px
+    &--hidden
+        max-height: 0px
+        padding: 0
+        margin: 0
+        .section-content__helper-wrapper
+            display: none
+    &--shown
+        padding-bottom: 0
+        .section-content__helper-wrapper
+            display: block
+            &--bottom-labels
+            padding-bottom: 26px
+
+//sections header areas
+.section-header
+    padding: 8px 20px 8px 20px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    h1
+        font-family: $OpenSans
+        font-size: 10px
+        text-transform: uppercase
+        color: $font-gray
+        user-select: none
+    &__expand-toggle
+        width: 9px
+        height: 9px
+        
+//color picker box
+.color-pick 
+    min-width: 18px
+    min-height: 19px
+    border-radius: 2px
+    margin: 0 10px
+    &--pink
+        background: $pink
+    &--gradient
+        background: $gradient
+    &--transparent
+        background: rgba(0, 0, 0, 0.4)
+
+//single row in section content areas
+.form-row
+    font-family: $OpenSans
+    display: flex
+    align-items: center
+    margin-top: 8px
+    max-height: 38px
+    &__expandable
+        margin: 0
+        &--shown
+            display: inline-flex
+            &__helper-wrapper
+            display: inline-flex
+        &--hidden
+            .form-row__expandable--helper-wrapper
+                display: none
+    &__input-span
+        position: relative
+        &--layer 
+            margin-top: 18px
+            margin-left: 10px
+        &--mt0
+            margin-top: 0
+    &__input
+        color: $font-gray
+        padding: 3px 0
+        margin: 0 6px
+        outline: none
+        border: 0px 
+        border-bottom: 1px solid $normal-gray
+        &:focus
+            border-bottom: 1px solid $active-blue
+        &--w62
+            width: 62px
+            margin-left: 10px
+        &--w60
+            width: 60px
+        &--w40
+            width: 40px
+        &--w34
+            width: 34px
+        &--w30
+            width: 30px
+        &--w26
+            width: 26px      
+    &__lock
+        margin: 0 5px
+        &--spacer
+        min-width: 8px
+    &__label-checkbox
+        height: 100%
+        margin: 0 8px 
+        color: $font-gray
+        user-select: none
+    &__label-left--small
+        min-width: 10px
+        font-size: 10px
+        color: $font-super-light-gray
+        user-select: none
+    &__label-left--big
+        color: $font-light-gray
+        min-width: 64px
+        user-select: none
+        &--m0
+            margin: 0
+    &__label-inside
+        position: absolute
+        color:  $font-super-light-gray
+        left: 0
+        top: 0
+        user-select: none
+    &__label-bottom
+        position: absolute
+        bottom: -12px
+        left: 6px
+        font-size: 10px
+        color: $font-super-light-gray
+        user-select: none
+
+
+
+
+// DROPDOWN
+.dropdown
+    list-style-type: none
+    box-sizing: border-box
+    position: relative
+    display: inline-block
+    background-color: #fff
+    width: 94px
+    padding-left: 0.4em
+    padding-bottom: 6px
+    margin-top: 16px
+    border: 0px
+    border-bottom: 1px solid $normal-gray
+    &--mt6
+        margin-top: 6px
+
+.dropdown-header 
+    color: $font-gray
+    cursor: default
+    &:after
+        content: url("../img/np_chevron-down_730206_000000.png")
+        position: absolute
+        right: 0
+
+.dropdown-content
+    background-color: #fff
+    margin-left: -1em
+    min-width: 110px
+    display: none
+    position: absolute
+    z-index: 1
+    margin-top: 5px
+    li
+        margin: 0
+        padding: 0.5em
+        padding-left: 1em
+        box-sizing: border-box
+        cursor: default
+        &:hover
+            font-weight: bold
+
+//dropdown content when expanded
+.dropdown-content-show
+    display: block
+
+// CHECKBOX
+/* checkboX container
+.checkbox-container
+  display: block
+  position: relative
+  padding-left: 12px
+  margin-bottom: 12px
+  cursor: default
+  user-select: none
+  input
+    position: absolute
+    opacity: 0
+
+/*hide default checkbox
+.checkbox-container input
+  position: absolute
+  top: 0
+  left: 0
+  opacity: 0
+  cursor: default
+
+/* tickbox create
+.tick
+  position: absolute
+  top: 0
+  left: 0
+  border-radius: 2px
+  height: 12px
+  width: 12px
+  background-color: #fff
+  border: 1px solid #cdcdcd
+
+/* hoven on container
+.checkbox-container
+  &:hover input ~ .tick
+    background-color: $light-gray
+  input:checked ~ .tick
+    background-color: #2196F3
+
+/* bg when ticked
+.checkbox-container input:checked ~ .tick
+  background-color: $active-blue
+  border: 1px solid $active-blue
+
+/* create tick
+.tick:after
+  content: ""
+  position: absolute
+  display: none
+
+/* tick show when checked
+.checkbox-container
+  input:checked ~ .tick:after
+    display: block
+  .tick:after
+    left: 1px
+    top: 0px
+    width: 4px
+    height: 8px
+    border: solid white
+    border-width: 0 3px 3px 0
+    -webkit-transform: rotate(45deg)
+    -ms-transform: rotate(45deg)
+    transform: rotate(45deg)
+
+/* tick style
+.checkbox-container .tick:after
+  left: 4px
+  top: 1px
+  width: 3px
+  height: 6px
+  border: solid white
+  border-width: 0 2px 2px 0
+  -webkit-transform: rotate(45deg)
+  -ms-transform: rotate(45deg)
+  transform: rotate(45deg)

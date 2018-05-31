@@ -1,0 +1,8 @@
+#dir
+node_modules/
+.vscode/
+
+#files
+UXPin.code-workspace
+.directory
+package-lock.json
